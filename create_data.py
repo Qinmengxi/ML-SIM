@@ -56,8 +56,7 @@ SIMopt.k2 = 126 + 30*(np.random.rand()-0.5)
 SIMopt.usePoissonNoise = False
 # noise level (percentage for Gaussian)
 
-# SIMopt.NoiseLevel = 1 + 1*(np.random.rand()-0.5)
-SIMopt.NoiseLevel = 9
+SIMopt.NoiseLevel = 8 + 8*(np.random.rand()-0.5)
 # 1(to blur using PSF), 0(to blur using OTF)
 SIMopt.UsePSF = 0
 # include OTF and GT in stack
