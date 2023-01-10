@@ -101,8 +101,8 @@ def SIM_reconstruct(model, opt):
 
 opt = argparse.Namespace()
 
-opt.root = 'Test_data/9'
-opt.out = 'test_output/9'
+opt.root = 'Test_data'
+opt.out = 'test_output'
 opt.task = 'simin_gtout'
 opt.norm = 'minmax'
 opt.dataset = 'fouriersim'

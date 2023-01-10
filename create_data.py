@@ -92,12 +92,12 @@ def processImage(SIMopt, file):
     if len(Io.shape) > 2 and Io.shape[2] > 1:
         Io = Io.mean(2)  # if not grayscale
 
-    filename = os.path.basename(file).replace('.tif', '')
+    filename = os.path.basename(file).replace('.png', '')
 
     print('Generating SIM frames for', file)
 
     for n in range(SIMopt.nrep):
-        SIMopt.outputname = '%s/%d/%s_%d.tif' % (SIMopt.root, SIMopt.NoiseLevel, filename, n)
+        SIMopt.outputname = '%s/%s_%d.tif' % (SIMopt.root, filename, n)
         I = MLSIM_datagen.SIMulator_functions.Generate_SIM_Image(SIMopt, Io)
 
 for file in files:
